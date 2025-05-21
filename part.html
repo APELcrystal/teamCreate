@@ -13,24 +13,24 @@
   
 
   <form id="add">
-    <label>
-      名前：<input type="text" id="member" required>
+    <dl>
+      <dt>名前：</dt>
+      <dd>
+        <input type="text" id="member" required>
+      </dd>
 
-    </label>
-    <br><br>
+      <dt>性別：</dt>
+      <dd>
+        <input type="radio" name="gender" id="man" value="1">
+        <label for="man">男性</label>
 
-    <label>
-      性別：
-      <input type="radio" name="gender" id="man" value="1">
-      <label for="man">男性</label>
+        <input type="radio" name="gender" id="female" value="2">
+        <label for="female">女性</label>
+      </dd>
+    </dl>
 
-      <input type="radio" name="gender" id="female" value="2">
-      <label for="female">女性</label>
-    </label>
-
-    <br><br>
-
-    <input type="submit" value="登録">
+    
+    <input type="submit" value="登録" style="width: 200px; height: 35px; background-color: rgba(33, 78, 225, 0.613); color: aliceblue;">
 
   </form>
   <div id="peple"></div>
