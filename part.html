@@ -9,23 +9,48 @@
 <body>
   <h2>ポジション別人数</h2>
 
-  <div id="number"></div>
+  <h3><div id="number" style="color:rgba(174, 9, 144, 0.673)"></div></h3>
   
 
   <form id="add">
     <dl>
-      <dt>名前：</dt>
+      <dt>* 名前：</dt>
       <dd>
-        <input type="text" id="member" required>
+        <select name="name" id="member" >
+          <option value="" selected>選択してください。</option>
+          <option value="みかん">みかん</option>
+          <option value="メロン">メロン</option>
+          <option value="キャラメル">キャラメル</option>
+          <option value="ブドウ">ブドウ</option>
+          <option value="レモン">レモン</option>
+          <option value="パイン">バナナ</option>
+          <option value="マンゴー">マンゴー</option>
+          <option value="キウイ">キウイ</option>
+          <option value="パパイヤ">パパイヤ</option>
+          <option value="さくらんぼ">さくらんぼ</option>
+          <option value="チーズ">チーズ</option>
+          <option value="モモ">モモ</option>
+          <option value="リンゴ">リンゴ</option>
+          
+        </select>
       </dd>
 
-      <dt>性別：</dt>
+      <dt>* 性別：</dt>
       <dd>
         <input type="radio" name="gender" id="man" value="1">
         <label for="man">男性</label>
 
         <input type="radio" name="gender" id="female" value="2">
         <label for="female">女性</label>
+      </dd>
+      <br>
+      <dt>ポジション許可：</dt>
+      <dd>
+        <input type="radio" name="S" value="S" id="tosu">
+        <label for="tosu">セッター
+        <input type="radio" name="L" id="receive" value="L">
+        <label for="receive">リベロ</label>
+        </label>
       </dd>
     </dl>
 

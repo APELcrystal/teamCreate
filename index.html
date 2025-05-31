@@ -18,18 +18,23 @@
         <input type="number" id="total" min="0" required >
       </dd>
 
-      ②
+      <!-- ②
       <dt><label>男子人数：</label></dt>
       <dd><input type="number" id="man" min="0" required></dd>
       <dt><label>女子人数（自動計算）</label></dt>
       <dd><input type="number" id="female" min="0" readonly></dd>
-      ③
+      ③ -->
+      ②
       <dt><label>レフト(L):</label></dt>
       <dd><input type="number" id="left" required></dd>
       <dt><label>センター(M):</label></dt>
       <dd><input type="number" id="middle" required></dd>
       <dt><label>ライト(R):</label></dt>
       <dd><input type="number" id="right" required></dd>
+      <div id="hiddenContent">
+      <dt>リベロ</dt>
+      <dd><input type="number" id="ribelo" readonly></dd>
+      </div>
     </dl>
   
     <input type="submit" value="確定" style="width:80px; height: 30px; background-color: rgb(42, 150, 114);">
@@ -41,7 +46,13 @@
 
     
 
-  <script src="LMR.js"></script>  
+  <script src="index.js"></script>  
+  <style>
+    #hiddenContent{
+      display:none;
+    }
+
+  </style>
 </body>
 
 </html>
